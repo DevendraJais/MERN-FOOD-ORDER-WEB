@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE = import.meta.env.VITE_API_URL ||  "https://mern-food-order-web.onrender.com";
+const BASE = import.meta.env.VITE_API_URL;
 
 export const API = axios.create({
     baseURL: `${BASE}/api`,
