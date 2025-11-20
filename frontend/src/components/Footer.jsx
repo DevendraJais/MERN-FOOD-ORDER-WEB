@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="row gy-4 align-items-start">
           {/* Brand Info */}
           <div className="col-lg-4 col-md-6">
-            <h2 className="footer-title">JAIPUR</h2>
+            <h2 className="footer-title">Indore</h2>
             <p className="footer-subtitle">— nice places to stay —</p>
             <p className="footer-text">
-              We offer a choice from more than 400 Jaipur hotels and apartments
+              We offer a choice from more than 400 indore hotels and apartments
               throughout the whole city. Enjoy your stay with comfort and
               elegance.
             </p>
@@ -91,7 +91,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="footer-bottom text-center mt-5 pt-4">
           <p>
-            Hotel Reservation Network | 2025 © hotels-jaipur.com. All rights
+            Hotel Reservation Network | 2025 © hotels-indore.com. All rights
             reserved
           </p>
         </div>

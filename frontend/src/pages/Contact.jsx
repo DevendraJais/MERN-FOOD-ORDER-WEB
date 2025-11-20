@@ -60,10 +60,10 @@ const Contact = () => {
           <strong>Phone:</strong> +91 98765 43210
         </p>
         <p className="mb-1">
-          <strong>Email:</strong> support@jaipurcafe.com
+          <strong>Email:</strong> support@indorecafe.com
         </p>
         <p>
-          <strong>Location:</strong> MI Road, Jaipur, Rajasthan
+          <strong>Location:</strong> CS Naidu Arcade, 204, Greater Kailash Road, Opposite Grotto, Old Palasia, Indore, Madhya Pradesh 452001
         </p>
       </div>
     </div>

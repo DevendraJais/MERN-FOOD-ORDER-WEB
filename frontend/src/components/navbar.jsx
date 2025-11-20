@@ -36,7 +36,7 @@ export const Navbar = () => {
           <i className="fa-regular fa-clock me-2 text-warning"></i>
           <span className="me-3 fw-semibold">Order Food 24/7</span>
           <i className="fa-solid fa-phone text-warning me-2"></i>
-          <span className="fw-semibold">+91 9876543210</span>
+          <span className="fw-semibold">+91 000000000</span>
         </div>
 
         {/* Right Section */}
