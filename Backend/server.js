@@ -17,24 +17,31 @@
     //     "http://localhost:5176",
     // ];
     const CLIENT_URLS = [
-        "https://mern-food-order-web-nsyu.vercel.app",
-        "http://localhost:5173",
-    ];
+    "https://mern-food-order-web.vercel.app",   // correct frontend
+    "http://localhost:5173",
+];
 
+    // app.use(
+    //     cors({
+    //         origin: (origin, cb) => {
+    //             // allow requests with no origin (e.g., curl, mobile)
+    //             if (!origin) return cb(null, true);
+    //             if (CLIENT_URLS.includes(origin)) return cb(null, true);
+    //             return cb(new Error("CORS not allowed"));
+    //         },
+    //         methods: ["GET", "POST", "PUT", "DELETE"],
+    //         credentials: true,
+    //     })
+    // );
 
-
-    app.use(
-        cors({
-            origin: (origin, cb) => {
-                // allow requests with no origin (e.g., curl, mobile)
-                if (!origin) return cb(null, true);
-                if (CLIENT_URLS.includes(origin)) return cb(null, true);
-                return cb(new Error("CORS not allowed"));
-            },
-            methods: ["GET", "POST", "PUT", "DELETE"],
-            credentials: true,
-        })
-    );
+    // CORS FIX
+ app.use(
+  cors({
+    origin: CLIENT_URLS,
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 
 
     app.use(express.urlencoded({ extended: true }));
@@ -47,7 +54,7 @@
         res.send("Backend is running 🚀");
     });
 
-    const PORT = process.env.PORT || 5000;
+    const PORT = process.env.PORT;
     app.listen(PORT, () => console.log(`🚀 Server running on ${PORT}`));
 
 
